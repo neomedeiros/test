@@ -9,8 +9,8 @@ script:
 before_deploy:
   - docker login -u neomedeiros -p bebel2302
 
-  deploy:
-    provider: script
-    script: docker push mannydesigns/node
-    on:
-      branch: master
+deploy:
+  provider: script
+  script: docker push mannydesigns/node
+  on:
+    branch: master
